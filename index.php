@@ -5,12 +5,12 @@
 //////////////////////////////
 
     
-
+require 'vendor/autoload.php';
 require 'autoload.php';
 include "functions.php";
 
 
-
+dump('coucou');
 
 ///////////////////////
 // Traitement PHP ici /
@@ -41,6 +41,9 @@ $rect2 ->setSize(100,60);
 $rect2 ->setColor("orange", 1);
 
 $svg .= $rect2 -> draw();
+
+
+dump($rect2);
 
 
 $ellipse2 = new Ellipse();
